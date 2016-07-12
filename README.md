@@ -73,12 +73,26 @@ To retrieve all bleets, you can send a GET request to `http://localhost:3000/ble
 
 ## Bonuses
 
+### Add Like Functionality
+
+You'll notice that each post in the API has a `like` value. Make it so that a user can like a bleet -- i.e., increment a bleet's `like` by 1.
+* Each bleet's like value should be displayed on its `index` and `show` views.
+* "Liking" should be triggered by clicking a button, link or icon located next to the bleet on its `index` and `show` views.
+
+Once you've done that, implement some "dislike" functionality.
+
 ### Add Comments
 
 The API also includes comments. A comment belongs to a bleet. A bleet's comments can be retrieving by accessing a URL like `http://localhost:3000/bleets/2/comments`. Each comment looks like this...
 
 ```json
-// Insert JSON here.
+{
+  "id": 1,
+  "content": "Wait, what?!",
+  "bleet_id": 1,
+  "created_at": "2016-07-12T15:05:54.189Z",
+  "updated_at": "2016-07-12T15:05:54.189Z"
+}
 ```
 
 A user should be able to comment on any bleet.
