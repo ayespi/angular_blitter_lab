@@ -84,7 +84,7 @@ To retrieve all bleets, you can send a GET request to `http://localhost:3000/ble
 
 ## Bonuses
 
-### Add Like Functionality
+### Add Like/Dislike Functionality
 
 You'll notice that each post in the API has a `like` value. Make it so that a user can like a bleet -- i.e., increment a bleet's `like` by 1.
 * Each bleet's like value should be displayed on its `index` and `show` views.
