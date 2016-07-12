@@ -70,3 +70,20 @@ To retrieve all bleets, you can send a GET request to `http://localhost:3000/ble
 #### 8. Add a delete button or link next to each bleet in `index.html`.
 
 * When clicked, a controller method should be triggered that deletes the corresponding bleet in the API.
+
+## Bonuses
+
+### Add Comments
+
+The API also includes comments. A comment belongs to a bleet. A bleet's comments can be retrieving by accessing a URL like `http://localhost:3000/bleets/2/comments`. Each comment looks like this...
+
+```json
+// Insert JSON here.
+```
+
+A user should be able to comment on any bleet.
+* A bleet's comments should be visible on that bleet's show page.
+* A form to add a comment should exist on a bleet's show page.
+* Each comment should have an "Edit Comment" button or link next to it. When clicked, an edit form appears below the comment.
+* Each comment should have a "Delete Comment" button or link next to it. When clicked, the comment is (a) deleted from the database and (b) removed from the page.s
+* A comment **DOES NOT** needs its own show view.
