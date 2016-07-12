@@ -6,7 +6,23 @@ Are you ready to build the next hot Silicon-Valley Startup: Blitter?
 
 If there's one VC space that is wide open for almost instant success, it's social networking. You pretty much build a social networking site of any kind, and Bam! you're worth a billion dollars.
 
-So let's do this. Your job is to build an angular site that pulls a list of 'bleets' from a backend (http://blittertime.herokuapp.com), and displays them in a list on a page. Your page should also have the ability to add new bleets, delete bleets, and 'like' a bleet. You'll need to build a custom directive to display each individual 'bleet'. And, you should be able to click on a bleet and display a detail page for just that individual bleet -- and you should use ui-router to do this.
+So let's do this. Your job is to build an Angular site that pulls a list of "bleets" from a backend (http://blittertime.herokuapp.com), and displays them in a list on a page. Your page should also have the ability to add new bleets, edit existing bleets and delete bleets. And, you should be able to click on a bleet and display a detail page for just that individual bleet. Along the way, you will need to use `ui-router` and `ngResource`.
+
+## API
+
+Bleets will be accessible via a local Rails-based API. To get this up and running, follow the instructions below...
+
+```bash
+# Clone + installation instructions go here.
+```
+
+Each bleet looks like this...
+
+```json
+// Insert JSON here.
+```
+
+To retrieve all bleets, you can send a GET request to `http://localhost:3000/bleets`. To get an individual bleet, just add an id to the end of the url, like so - `http://localhost:3000/bleets/2`.
 
 ## Steps
 
