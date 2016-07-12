@@ -10,40 +10,47 @@ So let's do this. Your job is to build an angular site that pulls a list of 'ble
 
 ## Steps
 
-1. Bootstrap an Angular application. It should have...
-  * A master `blitter` module.
-  * A `bleets` sub-module that handles all "Bleet" related functionality.
+#### 1. Bootstrap an Angular application. It should have...
 
-2. Include `ui-router` and use it to...
-  * Create two routes. One for an index of bleets, the other for a show page.
-  * Don't forget to add the directive required to view different states in your HTML.
+* A master `blitter` module.
+* A `bleets` sub-module that handles all "Bleet" related functionality.
 
-  > [`ui-router` documentation.](https://github.com/angular-ui/ui-router/wiki)
+#### 2. Include `ui-router` and use it to...
 
-3. Create a factory that allows you to consume the Blitter API using `ngResource` and `$resource`.
+* Create two routes. One for an index of bleets, the other for a show page.
+* Don't forget to add the directive required to view different states in your HTML.
 
-  > [`$resource` documentation.]
+> [`ui-router` documentation.](https://github.com/angular-ui/ui-router/wiki)
 
-4. Create a controller for each route.
-  * The controller should have access to the functionality defined in your factory.
+#### 3. Create a factory that allows you to consume the Blitter API using `ngResource` and `$resource`.
 
-5. Create `index.html` and `show.html` bleet views.
-  * `index` should list all bleets. `show` should offer a detailed view of each bleet.
-  * In `index`, each bleet should have a link to its respective show page.
+> [`$resource` documentation.]
 
-6. Add `new` functionality to your application. You can either...
-  * Create a separate route, controller and view (with form) for `new` functionality. Or...
-  * You can place the form on the `index` page and define form functionality in the index controller. No additional route required.
-  * In either scenario, submission of the form should trigger a method in your controller that creates a new bleet in the API.
+#### 4. Create a controller for each route.
 
-  > **BONUS:** If you go with the second index option, make it so that the new form only appears when you click a "New Grumble" button or link.
+* The controller should have access to the functionality defined in your factory.
 
-7. Add `edit` functionality to your application. You can either...
-  * Create a separate route, controller and view (with form) for `edit` functionality. Or...
-  * You can place the form on the `show` page and define form functionality in the show controller. No additional route required.
-  * In either scenario, submission of the form should trigger a method in your controller that updates a bleet in the API.
+####  5. Create `index.html` and `show.html` bleet views.
 
-  > **BONUS:** If you go with the second show option, make it so that the new form only appears when you click a "Edit Grumble" button or link.
+* `index` should list all bleets. `show` should offer a detailed view of each bleet.
+* In `index`, each bleet should have a link to its respective show page.
 
-8. Add a delete button or link next to each bleet in `index.html`.
-  * When clicked, a controller method should be triggered that deletes the corresponding bleet in the API.
+#### 6. Add `new` functionality to your application. You can either...
+
+* Create a separate route, controller and view (with form) for `new` functionality. Or...
+* You can place the form on the `index` page and define form functionality in the index controller. No additional route required.
+* In either scenario, submission of the form should trigger a method in your controller that creates a new bleet in the API.
+
+> **BONUS:** If you go with the second index option, make it so that the new form only appears when you click a "New Grumble" button or link.
+
+####  7. Add `edit` functionality to your application. You can either...
+
+* Create a separate route, controller and view (with form) for `edit` functionality. Or...
+* You can place the form on the `show` page and define form functionality in the show controller. No additional route required.
+* In either scenario, submission of the form should trigger a method in your controller that updates a bleet in the API.
+
+> **BONUS:** If you go with the second show option, make it so that the new form only appears when you click a "Edit Grumble" button or link.
+
+#### 8. Add a delete button or link next to each bleet in `index.html`.
+
+* When clicked, a controller method should be triggered that deletes the corresponding bleet in the API.
