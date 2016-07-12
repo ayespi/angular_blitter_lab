@@ -13,13 +13,24 @@ So let's do this. Your job is to build an Angular site that pulls a list of "ble
 Bleets will be accessible via a local Rails-based API. To get this up and running, follow the instructions below...
 
 ```bash
-# Clone + installation instructions go here.
+git clone https://github.com/ga-wdi-exercises/blitter-api
+cd blitter-api
+bundle install
+rake db:create db:migrate db:seed
+rails s
+# open http://localhost:3000/bleets.json
 ```
 
 Each bleet looks like this...
 
 ```json
-// Insert JSON here.
+{
+  "id":5,
+  "content":"Is there a hack and tell meetup in DC?",
+  "likes":2,
+  "created_at":"2016-07-12T14:28:12.003Z",
+  "updated_at":"2016-07-12T14:28:12.003Z"
+}
 ```
 
 To retrieve all bleets, you can send a GET request to `http://localhost:3000/bleets`. To get an individual bleet, just add an id to the end of the url, like so - `http://localhost:3000/bleets/2`.
