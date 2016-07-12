@@ -6,7 +6,7 @@ Are you ready to build the next hot Silicon-Valley Startup: Blitter?
 
 If there's one VC space that is wide open for almost instant success, it's social networking. You pretty much build a social networking site of any kind, and Bam! you're worth a billion dollars.
 
-So let's do this. Your job is to build an Angular site that pulls a list of "bleets" from a backend (http://blittertime.herokuapp.com), and displays them in a list on a page. Your page should also have the ability to add new bleets, edit existing bleets and delete bleets. And, you should be able to click on a bleet and display a detail page for just that individual bleet. Along the way, you will need to use `ui-router` and `ngResource`.
+So let's do this. Your job is to build an Angular site that pulls a list of "bleets" from an API and displays them in a list on a page. Your page should also have the ability to add new bleets, edit existing bleets and delete bleets. And, you should be able to click on a bleet and display a detail page for just that individual bleet. Along the way, you will need to use `ui-router` and `ngResource`.
 
 ## API
 
