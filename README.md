@@ -24,7 +24,7 @@ So let's do this. Your job is to build an angular site that pulls a list of 'ble
 
 #### 3. Create a factory that allows you to consume the Blitter API using `ngResource` and `$resource`.
 
-> [`$resource` documentation.]
+> [`$resource` documentation.](https://docs.angularjs.org/api/ngResource/service/$resource)
 
 #### 4. Create a controller for each route.
 
