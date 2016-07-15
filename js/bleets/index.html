@@ -1,0 +1,11 @@
+<h2>These are all the Bleets</h2>
+<div data-ng-repeat="bleet in BleetIndexViewModel.bleets | orderBy:'-created_at'">
+  <p><a data-ui-sref="bleetShow({id: bleet.id})">{{bleet.content}}</a></p>
+</div>
+
+<!-- <h2>{{BleetShowViewModel.bleet.title}}</h2>
+<p><dfn>Author:</dfn> {{BleetShowViewModel.bleet.authorName}}</p>
+<p><dfn>Created:</dfn> {{BleetShowViewModel.bleet.created_at}}</p>
+<blockquote>{{BleetShowViewModel.bleet.id}}</blockquote>
+<blockquote>{{BleetShowViewModel.bleet.content}}</blockquote>
+<blockquote>{{BleetShowViewModel.bleet.likes}}</blockquote> -->
